@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>blocks</title>
+	<style type="text/css">
+		.first{
+			background: linear-gradient(217deg, rgba(62,168,105,.8), rgba(62,168,105,0) 70.71%),  
+                        linear-gradient(127deg, rgba(199,140,245,.8), rgba(199,140,245,0) 70.71%),
+                        linear-gradient(336deg, rgba(245,187,91,.8), rgba(245,187,91,0) 70.71%);;
+			border: double 10px #C78CF5;
+			box-shadow: 0 20px 60px rgba(245,187,91,.8), 0 30px 20px rgba(199,140,245,.8);
+		}
+		.second{
+			background: radial-gradient(#4D47F5, #F56054);
+			border: double 10px #F5DE6C;
+		    display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 20px 60px rgba(245,96,84,1), 0 30px 20px rgba(245,96,84,1);
+
+        }
+		.third{
+			background:  radial-gradient(circle at 50% 0,
+                         rgba(214,102,66,.5),
+                         rgba(214,102,66,0) 70.71%),
+                         radial-gradient(circle at 6.7% 75%,
+                         rgba(88,214,182,.5),
+                         rgba(88,214,182,0) 70.71%),
+                         radial-gradient(circle at 93.3% 75%,
+                         rgba(147,109,214,.5),
+                         rgba(147,109,214,0) 70.71%) beige;
+                         border-radius: 50%;;
+			border: double 10px #FFF700;
+			font-size: 50px;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+		}
+		.forth{
+		    background:  linear-gradient(#63B0D6, #D66D78, #58D6BC, #D69442);
+			border: outset 10px #5796F7;
+		}
+		.fifth{
+            background:  linear-gradient(to left, #BF4B8B 28px, #011140 77%, #044BD9);
+			border: double  10px #0339A6;
+			font-size: 50px;
+		}
+		.sixth{
+			background:  conic-gradient(at 0% 30%, #BF0436 10%, #F2D7B6 30%, #7EB6D9 50%);
+			border: double 10px darkred;
+		}
+		.seventh{
+			background:  repeating-linear-gradient(190deg, rgba(220, 20, 60, 0.5) 40px,
+                         rgba(255, 127, 80, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+                         rgba(46, 139, 87, 0.5) 160px, rgba(65, 105, 225, 0.5) 200px,
+                         rgba(75, 0, 130, 0.5) 240px, rgba(255, 105, 180, 0.5) 280px,
+                         rgba(220, 20, 60, 0.5) 300px),
+                         repeating-linear-gradient(-190deg, rgba(220, 20, 60, 0.5) 30px,
+                         rgba(255, 127, 80, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+                         rgba(46, 139, 87, 0.5) 120px, rgba(65, 105, 225, 0.5) 150px,
+                         rgba(75, 0, 130, 0.5) 180px, rgba(255, 105, 180, 0.5) 210px,
+                         rgba(220, 20, 60, 0.5) 230px),
+                         repeating-linear-gradient(23deg, Crimson 50px, Coral 100px,
+                          yellow 150px, SeaGreen 200px, RoyalBlue 250px,
+                          indigo 300px, HotPink 350px, Crimson 370px);
+            border: outset 10px indigo;
+		}
+		.first, .second, .third{
+			width: 400px;
+			height: 400px;
+			margin: auto;
+			margin-top: 3%
+		}
+		.first, .second{
+			margin-right: 120px;
+		}
+		.second{
+			margin-left: 1px;
+		}
+		.forth, .seventh{
+			width: 650px;
+			height: 400px;
+			margin: auto;
+			margin-top: 3%
+		}
+		.container {
+            display: flex;
+        }
+		.fifth, .sixth{
+		    height: 400px;
+            width: 650px;
+            margin-right: 30px;
+            margin-top: 5%;
+		}
+		h1 {
+            position: fixed;
+            top: 0px;
+            width: 250px;
+            margin-top: 0;
+            background: white;
+            padding: 10px;
+        }
+        IMG.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 200px;
+            width: 200px;
+        }
+        .limonchik {
+	        width: 200px; 
+	        height: 200px; 
+	        background: #F5F240; 
+	        border: 2px solid #F0D900; 
+	        border-radius: 10px 150px 30px 150px;
+        }
+        marquee {
+        	margin-top: 5%
+        }
+        .borders {
+            width: 0; height: 0;
+            border: 100px solid;
+            border-color: #FF5B45 #1D532A #6DCDF7 #FFE02E;
+            margin: auto;
+            margin-top: 5%;
+        }
+        .kybik1 {
+	        background: #e56868;
+	        width: 200px;
+	        height: 200px;
+	        position: relative;
+	        margin: auto;
+	        margin-top: 5%;
+        }
+        .kybik2 {
+	        background: #6db8e3;
+	        width: 200px;
+        	height: 200px;
+	        position: relative;
+	        top: -100px;
+	        right: -100px;
+	        margin: auto;
+        }
+        p.blocktext {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15%;
+            width: 350px;
+            text-align: center;
+            font-family:  "Times New Roman", Times, serif;
+        }
+        p.center {	
+        	font-family:  "Times New Roman", Times, serif;
+            margin: 0;
+            background: yellow;
+            position: absolute;
+            top: 120%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+        div.container4 {
+            height: 10em;
+            position: relative }
+
+        .rotate-shadows {
+            width: 220px;
+            height: 220px;
+            position: relative;
+        }
+        .rotate-shadows:after,
+        .rotate-shadows:before {
+            content: "💗";
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 200%;
+            width: 100%;
+            height: 100%;
+            transform-origin: center center;
+        }
+        .rotate-shadows:before {
+            box-shadow: inset 0 20px 0 rgba(0, 250, 250, 0.6), inset 20px 0 0 rgba(0, 200, 200, 0.6), inset 0 -20px 0 rgba(0, 150, 200, 0.6), inset -20px 0 0 rgba(0, 200, 250, 0.6);
+            animation: rotate-before 2s -0.5s linear infinite;
+        }
+        .rotate-shadows:after {
+            box-shadow: inset 0 20px 0 rgba(250, 250, 0, 0.6), inset 20px 0 0 rgba(250, 200, 0, 0.6), inset 0 -20px 0 rgba(250, 150, 0, 0.6), inset -20px 0 0 rgba(250, 100, 0, 0.6);
+            animation: rotate-after 2s -0.5s linear infinite;
+        }
+        @keyframes rotate-after {
+            0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+            50% {transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);}
+            100% {transform: rotateZ(360deg) scaleX(1) scaleY(1);}
+        }
+        @keyframes rotate-before {
+            0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+            50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);}
+           100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
+        }
+
+	</style>
+</head>
+<body>
+	<h1>We learn blocks</h1>
+	<div class="container">
+	<div class="first"> <p class="blocktext"><em> <strong>Фото дня. Психопати</strong> </em><br>
+		Безглуздість та жорстокість орків меж не мають.<br>
+	    У Ворзелі за глови підвісили курей.<br>
+	    Це-психопати. Лікарі так називають.<br>
+	    Їм місце-божевільня, і чим далі від людей.<br> 
+	    Та їх чомусь-катів цих, відморозків, звірів<br> 
+	    До армії призвали, ще і зброю хтось надав.<br> 
+	    Працюють на одне у них клітинки сірі:<br>  
+	    У тих, які прийшли сюда, і в тих, хто їх послав.<br> 
+	    Не в силі людський розум цю орду спрйняти.<br> 
+	    Жорстокість, катування, смерть- за орками слідом.<br> 
+	    Таких не можна з божевільні випускати.<br> 
+	    Та вони тут, адже Росія - це і є дурдом.</p>	
+	</div>
+	   <div class="second"> <IMG class="displayed" src="https://i.pinimg.com/564x/72/95/0c/72950cf27736a73bc441ad8b5f5eda55.jpg"  > </div>
+	</div>
+
+       <div class="borders"></div>
+	   <div class="kybik1"></div>
+	   <div class="kybik2"></div> 
+	   <div class="rotate-shadows"></div>
+       <div class="third"> <div class="limonchik"> </div>
+    </div>
+
+	<div class="forth"><marquee style=" color: #B22222; font-size: 50px; width: 100%;">Ось вам і бігаючий рядок</marquee>
+		<marquee scrollamount="15"direction="down" behavior="alternate"><marquee behavior="alternate" ><img src="https://i.pinimg.com/originals/94/8b/a9/948ba9b8d2dc355a8c26c33477f05011.gif" style=" width: 100px; height: 100px;"></marquee></marquee> 
+	</div>
+
+	<div class="container">
+		<div class="fifth"></div>
+	    <div class="sixth"></div>
+	</div>
+
+	<div class="seventh">
+		<div class="container4"><p class="center"><strong>Чому розплетена коса, а на очах бринить сльоза?</strong></p> </div>
+	</div>
+
+</body>
+</html>
